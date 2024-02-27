@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customerpagebg"
+    tools:context=".CustomerActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adminLogin"
+        android:text="Customer Login"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:alpha="0.8" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adminLogin"
+        android:backgroundTint="@color/transparent"
+        app:cardCornerRadius="20dp"
+        android:elevation="12dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/CUsername"
+                android:layout_width="317dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparentbg"
+                android:drawableLeft="@drawable/username"
+                android:drawablePadding="15dp"
+                android:hint="Enter Username"
+                android:imeOptions="actionNext"
+                android:inputType="textAutoComplete"
+                android:minHeight="30dp"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:layout_margin="20dp"/>
+
+            <EditText
+                android:id="@+id/CPass"
+                android:layout_width="318dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/transparentbg"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="15dp"
+                android:hint="Enter Password"
+                android:textColorHint="@color/white"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:minHeight="40dp"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_margin="20dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/noaccount"
+                android:text="Don't have an account?"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingStart="15dp"
+                android:paddingTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Cregister"
+                android:text="Register"
+                android:textColor="@color/purple_700"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="20dp"
+
+                />
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CLogin"
+                android:text="Login"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:minHeight="60dp"
+                android:minWidth="150dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:background="#3623A3E8"
+                />
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

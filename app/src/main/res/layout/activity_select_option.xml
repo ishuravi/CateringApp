@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selectloginbg"
+    tools:context=".SelectOptionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooselogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Choose Login"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:alpha="0.5"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/adminLogo"
+        android:src="@drawable/admin"
+        android:layout_below="@+id/chooselogin"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminLogo"
+        android:text="ADMIN"
+        android:textColor="@color/purple_200"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:textSize="25sp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/customer"
+        android:id="@+id/customerLogo"
+        android:layout_below="@id/chooselogin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="40dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CUSTOMER"
+        android:layout_below="@id/customerLogo"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/purple_200"
+        android:textSize="25sp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"/>
+
+
+
+</RelativeLayout>
